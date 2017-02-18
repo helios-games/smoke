@@ -1,4 +1,5 @@
-before_install: ./build.sh
+install: ./install-dependencies.sh
 cache:
   directories:
   - $HOME/.m2
+script: ./run.sh
