@@ -1,0 +1,5 @@
+Journey: "Open Homepage"
+
+    go to "http://games.alexecollins.com"
+    title should contain "Helios Games"
+    text of "h1" should be "Games"
