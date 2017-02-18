@@ -1,1 +1,4 @@
 before_install: ./build.sh
+cache:
+  directories:
+  - $HOME/.m2
