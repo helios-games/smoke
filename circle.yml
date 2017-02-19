@@ -1,6 +1,6 @@
 machine:
   java:
-    version: 1.8
+    version: openjdk7
 dependencies:
   override:
     - ./install-dependencies.sh
