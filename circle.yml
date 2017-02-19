@@ -1,0 +1,9 @@
+machine:
+  java:
+    version: 1.8
+dependencies:
+  override:
+    - ./install-dependencies.sh
+test:
+  override:
+    - ./run.sh
