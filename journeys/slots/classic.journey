@@ -1,0 +1,6 @@
+Journey: "Classic Slot"
+
+    go to "http://games.alexecollins.com/slots/classic"
+    title should contain "Classic Slot"
+    text of "#balance" should match "^[.0-9]+$"
+    text of "#play" should be "Spin!"
