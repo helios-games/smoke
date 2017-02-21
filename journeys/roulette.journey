@@ -1,6 +1,0 @@
-Journey: "Roulette"
-
-    go to "http://games.alexecollins.com/roulette"
-    title should contain "Roulette"
-    text of "#balance" should match "^[.0-9]+$"
-    text of "#play" should be "Spin!"
