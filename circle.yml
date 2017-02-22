@@ -7,3 +7,6 @@ dependencies:
 test:
   override:
     - ./run.sh
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/reports/.*xml" -exec cp {} 
