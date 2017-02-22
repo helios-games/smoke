@@ -4,6 +4,9 @@ machine:
 dependencies:
   override:
     - ./install-dependencies.sh
+general:
+  artifacts:
+    - screenshots
 test:
   override:
     - ./run.sh
