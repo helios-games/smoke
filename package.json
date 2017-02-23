@@ -1,7 +1,7 @@
 {
   "name": "smoke",
   "version": "1.0.0",
-  "description": "",
+  "description": "Smoke tests",
   "scripts": {
     "test": "./node_modules/.bin/wdio wdio.conf.js"
   },
@@ -10,15 +10,15 @@
     "url": "git+https://github.com/helios-games/smoke.git"
   },
   "author": "TODO",
-  "license": "TODO",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/helios-games/smoke/issues"
   },
   "homepage": "https://github.com/helios-games/smoke#readme",
   "devDependencies": {
+    "wdio": "^0.3.3",
     "wdio-junit-reporter": "^0.2.0",
     "wdio-mocha-framework": "^0.5.8",
-    "wdio-phantomjs-service": "^0.2.2",
     "wdio-selenium-standalone-service": "0.0.8"
   }
 }
