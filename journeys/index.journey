@@ -1,4 +1,4 @@
 Journey: "Homepage"
 
-    go to "http://games.alexecollins.com"
+    go to "/"
     title should contain "Helios Games"
