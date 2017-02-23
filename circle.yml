@@ -3,6 +3,6 @@ general:
     - errorShots
 test:
   override: 
-    - ./node_modules/.bin/wdio wdio.conf.js
+    - wdio wdio.conf.js
   post:
     - mv junit $CIRCLE_TEST_REPORTS/
