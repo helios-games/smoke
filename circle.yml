@@ -1,15 +1,8 @@
-machine:
-  java:
-    version: openjdk8
-dependencies:
-  override:
-    - ./install-dependencies.sh
 general:
   artifacts:
-    - screenshots
+    - errorShots
 test:
-  override:
-    - ./run.sh
+  override: ./node_modules/.bin/wdio wdio.conf.js 
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    -  cp reports/* $CIRCLE_TEST_REPORTS/junit/
+    - cp reports/* $CIRCLE_TEST_REPORTS/junit/

@@ -1,4 +1,0 @@
-Journey: "Homepage"
-
-    go to "/"
-    title should contain "Helios Games"

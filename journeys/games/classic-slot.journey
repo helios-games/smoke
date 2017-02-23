@@ -1,5 +1,0 @@
-Journey: "Classic Slot"
-
-    go to "/games/classic-slot"
-    title should contain "Classic Slot"
-    text of "#balance" should match "^[.0-9]+$"

@@ -1,5 +1,0 @@
-Journey: "Roulette"
-
-    go to "/games/roulette"
-    title should contain "Roulette"
-    text of "#balance" should match "^[.0-9]+$"
