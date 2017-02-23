@@ -2,6 +2,7 @@ general:
   artifacts:
     - errorShots
 test:
-  override: ./node_modules/.bin/wdio wdio.conf.js
+  override: 
+    - ./node_modules/.bin/wdio wdio.conf.js
   post:
     - mv junit $CIRCLE_TEST_REPORTS/
