@@ -4,7 +4,7 @@ general:
 test:
   override: 
     - mkdir junit
-    - find . -name wdio
-    - ./node_modules/webdriverio/bin/wdio wdio.conf.js
+    - find . -type f -name wdio
+    - ./node_modules/wdio/node_modules/.bin/wdio wdio.conf.js
   post:
     - mv junit $CIRCLE_TEST_REPORTS/
