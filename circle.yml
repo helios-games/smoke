@@ -3,6 +3,7 @@ general:
     - errorShots
 test:
   override: 
+    - find .
     - wdio wdio.conf.js
   post:
     - mv junit $CIRCLE_TEST_REPORTS/
