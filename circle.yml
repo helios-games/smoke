@@ -2,9 +2,9 @@ general:
   artifacts:
     - errorShots
 test:
-  pre:
-   - mkdir junit
   override: 
+    - mkdir junit
+    - find . -name wdio
     - ./node_modules/webdriverio/bin/wdio wdio.conf.js
   post:
     - mv junit $CIRCLE_TEST_REPORTS/
