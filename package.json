@@ -17,6 +17,8 @@
   "homepage": "https://github.com/helios-games/smoke#readme",
   "devDependencies": {
     "wdio": "^0.3.3",
+    "chai": "*",
+    "mocha": "*",
     "wdio-junit-reporter": "^0.2.0",
     "wdio-mocha-framework": "^0.5.8",
     "wdio-selenium-standalone-service": "0.0.8"
