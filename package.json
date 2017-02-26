@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helios-games/smoke.git"
+    "url": "git+https://github.com/phoebus-games/smoke.git"
   },
   "author": "TODO",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/helios-games/smoke/issues"
+    "url": "https://github.com/phoebus-games/smoke/issues"
   },
-  "homepage": "https://github.com/helios-games/smoke#readme",
+  "homepage": "https://github.com/phoebus-games/smoke#readme",
   "devDependencies": {
     "wdio": "^0.3.3",
     "chai": "*",
