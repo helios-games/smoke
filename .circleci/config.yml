@@ -15,6 +15,7 @@ jobs:
           paths:
             - node_modules
       - run: mkdir junit
+      - run: cat ./node_modules/wdio/node_modules/.bin/wdio 
       - run: ./node_modules/wdio/node_modules/.bin/wdio wdio.conf.js
       - store_test_results:
           path: junit
