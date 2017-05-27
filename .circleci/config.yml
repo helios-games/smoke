@@ -6,7 +6,7 @@ jobs:
       - image: "circleci/openjdk:8"
     steps:
       - checkout
-      - run: sudo apt-get -y install npm
+      - run: sudo apt-get -y install npm nodejs
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run: npm install
