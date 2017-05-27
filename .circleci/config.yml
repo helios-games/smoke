@@ -7,7 +7,6 @@ jobs:
     steps:
       - checkout
       - run: sudo apt-get update
-      - run: sudo apt-cache search openjdk-7
       - run: sudo apt-get -y install openjdk-7
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
