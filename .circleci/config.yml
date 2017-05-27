@@ -3,10 +3,10 @@ jobs:
   build:
     working_directory: ~/work
     docker:
-      - image: "circleci/openjdk:8"
+      - image: "circleci/node:4.8.2"
     steps:
       - checkout
-      - run: sudo apt-get -y install npm nodejs
+      - run: sudo apt-get -y install openjdk-8-jre
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run: npm install
@@ -15,7 +15,6 @@ jobs:
           paths:
             - node_modules
       - run: mkdir junit
-      - run: cat ./node_modules/wdio/node_modules/.bin/wdio 
       - run: ./node_modules/wdio/node_modules/.bin/wdio wdio.conf.js
       - store_test_results:
           path: junit
