@@ -6,8 +6,7 @@ jobs:
       - image: "circleci/node:4.8.2"
     steps:
       - checkout
-      - run: sudo apt-cache search openjdk
-      - run: sudo apt-get -y install openjdk-8-jre
+      - run: sudo apt-get -y install openjdk-7-jre-headless
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run: npm install
